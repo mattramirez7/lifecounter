@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Dpy-yn-vV8" customClass="PlayerView" customModule="lifecounterv2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2h-Zf-6x6">
+                    <rect key="frame" x="177" y="323" width="21" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUO-wm-j4B">
+                    <rect key="frame" x="149" y="293" width="77" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="tinted" title="Player 3">
+                        <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="btnP3NamePressed:" destination="Dpy-yn-vV8" eventType="touchUpInside" id="6FU-EL-f94"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxe-72-hcB">
+                    <rect key="frame" x="126" y="343" width="33" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="gray" title="+"/>
+                    <connections>
+                        <action selector="btnPlus1P3Pressed:" destination="Dpy-yn-vV8" eventType="touchUpInside" id="Niy-Si-qbR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bu-rQ-R2c">
+                    <rect key="frame" x="217" y="343" width="31" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="gray" title="-"/>
+                    <connections>
+                        <action selector="btnMinus1P3Pressed:" destination="Dpy-yn-vV8" eventType="touchUpInside" id="PW5-1E-Cmx"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LTi-QZ-v9B">
+                    <rect key="frame" x="169" y="342" width="37" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert" returnKeyType="done"/>
+                </textField>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="5ou-4m-Y19"/>
+            <color key="backgroundColor" systemColor="systemPinkColor"/>
+            <constraints>
+                <constraint firstItem="iUO-wm-j4B" firstAttribute="centerX" secondItem="5ou-4m-Y19" secondAttribute="centerX" id="2iA-Ze-gIP"/>
+                <constraint firstItem="qxe-72-hcB" firstAttribute="centerX" secondItem="5ou-4m-Y19" secondAttribute="centerX" constant="-45" id="4E7-Xi-EmF"/>
+                <constraint firstItem="c2h-Zf-6x6" firstAttribute="centerX" secondItem="5ou-4m-Y19" secondAttribute="centerX" id="DZl-76-mLV"/>
+                <constraint firstItem="9bu-rQ-R2c" firstAttribute="centerY" secondItem="5ou-4m-Y19" secondAttribute="centerY" constant="25" id="HCr-oZ-q28"/>
+                <constraint firstItem="c2h-Zf-6x6" firstAttribute="centerX" secondItem="5ou-4m-Y19" secondAttribute="centerX" id="OaK-xt-0gp"/>
+                <constraint firstItem="9bu-rQ-R2c" firstAttribute="centerX" secondItem="5ou-4m-Y19" secondAttribute="centerX" constant="45" id="RqH-6O-bRp"/>
+                <constraint firstItem="LTi-QZ-v9B" firstAttribute="leading" secondItem="qxe-72-hcB" secondAttribute="trailing" constant="10" id="UON-Dq-XTs"/>
+                <constraint firstItem="LTi-QZ-v9B" firstAttribute="top" secondItem="iUO-wm-j4B" secondAttribute="bottom" constant="18" id="Uhg-iL-9py"/>
+                <constraint firstItem="iUO-wm-j4B" firstAttribute="centerY" secondItem="5ou-4m-Y19" secondAttribute="centerY" constant="-25" id="XWc-fN-Qw2"/>
+                <constraint firstItem="c2h-Zf-6x6" firstAttribute="centerX" secondItem="5ou-4m-Y19" secondAttribute="centerX" id="b8Z-Ud-ekc"/>
+                <constraint firstItem="9bu-rQ-R2c" firstAttribute="leading" secondItem="LTi-QZ-v9B" secondAttribute="trailing" constant="11" id="gpg-pR-Bob"/>
+                <constraint firstItem="c2h-Zf-6x6" firstAttribute="centerY" secondItem="5ou-4m-Y19" secondAttribute="centerY" id="hfW-S2-aUx"/>
+                <constraint firstItem="qxe-72-hcB" firstAttribute="centerY" secondItem="5ou-4m-Y19" secondAttribute="centerY" constant="25" id="qw6-Ju-bQU"/>
+            </constraints>
+            <connections>
+                <outlet property="lblScoreP3" destination="c2h-Zf-6x6" id="gpo-2O-1Jk"/>
+                <outlet property="txtFieldAddMinusValueP3" destination="LTi-QZ-v9B" id="aIw-Vz-OqZ"/>
+            </connections>
+            <point key="canvasLocation" x="851" y="123"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
