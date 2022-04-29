@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="deh-y7-bMw" customClass="PlayerView" customModule="lifecounterv2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZS-Yb-DpE">
+                    <rect key="frame" x="177" y="323" width="21" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoy-e3-hm1">
+                    <rect key="frame" x="149.5" y="293" width="76" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="tinted" title="Player 7">
+                        <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="btnP7NamePressed:" destination="deh-y7-bMw" eventType="touchUpInside" id="EwM-Oq-FQv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9pb-7b-3If">
+                    <rect key="frame" x="126" y="343" width="33" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="gray" title="+"/>
+                    <connections>
+                        <action selector="btnPlus1P7Pressed:" destination="deh-y7-bMw" eventType="touchUpInside" id="wKl-e5-Igi"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5b-SF-1TZ">
+                    <rect key="frame" x="217" y="343" width="31" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="gray" title="-"/>
+                    <connections>
+                        <action selector="btnMinus1P7Pressed:" destination="deh-y7-bMw" eventType="touchUpInside" id="iKc-8k-zK2"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ygW-de-bTT">
+                    <rect key="frame" x="169" y="343" width="37" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert" returnKeyType="done"/>
+                </textField>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="gK6-jD-F7U"/>
+            <color key="backgroundColor" systemColor="systemGreenColor"/>
+            <constraints>
+                <constraint firstItem="ZZS-Yb-DpE" firstAttribute="centerY" secondItem="gK6-jD-F7U" secondAttribute="centerY" id="Bd3-G5-uNm"/>
+                <constraint firstItem="e5b-SF-1TZ" firstAttribute="centerY" secondItem="gK6-jD-F7U" secondAttribute="centerY" constant="25" id="KIx-tt-SV9"/>
+                <constraint firstItem="ygW-de-bTT" firstAttribute="leading" secondItem="9pb-7b-3If" secondAttribute="trailing" constant="10" id="RNy-Kf-Qcf"/>
+                <constraint firstItem="e5b-SF-1TZ" firstAttribute="centerX" secondItem="gK6-jD-F7U" secondAttribute="centerX" constant="45" id="XJ7-hh-QSp"/>
+                <constraint firstItem="uoy-e3-hm1" firstAttribute="centerY" secondItem="gK6-jD-F7U" secondAttribute="centerY" constant="-25" id="cYY-lX-4uY"/>
+                <constraint firstItem="ZZS-Yb-DpE" firstAttribute="centerX" secondItem="gK6-jD-F7U" secondAttribute="centerX" id="fX6-F4-eLU"/>
+                <constraint firstItem="e5b-SF-1TZ" firstAttribute="leading" secondItem="ygW-de-bTT" secondAttribute="trailing" constant="11" id="lxQ-wt-WRd"/>
+                <constraint firstItem="ZZS-Yb-DpE" firstAttribute="centerX" secondItem="gK6-jD-F7U" secondAttribute="centerX" id="odf-M4-YTK"/>
+                <constraint firstItem="ZZS-Yb-DpE" firstAttribute="centerX" secondItem="gK6-jD-F7U" secondAttribute="centerX" id="ryf-ab-43e"/>
+                <constraint firstItem="uoy-e3-hm1" firstAttribute="centerX" secondItem="gK6-jD-F7U" secondAttribute="centerX" id="s1e-lH-nlC"/>
+                <constraint firstItem="ygW-de-bTT" firstAttribute="top" secondItem="uoy-e3-hm1" secondAttribute="bottom" constant="19" id="wiO-tg-gFd"/>
+                <constraint firstItem="9pb-7b-3If" firstAttribute="centerX" secondItem="gK6-jD-F7U" secondAttribute="centerX" constant="-45" id="xTN-Ex-eWa"/>
+                <constraint firstItem="9pb-7b-3If" firstAttribute="centerY" secondItem="gK6-jD-F7U" secondAttribute="centerY" constant="25" id="zNT-d9-d4M"/>
+            </constraints>
+            <connections>
+                <outlet property="lblScoreP7" destination="ZZS-Yb-DpE" id="kRX-B0-7YP"/>
+                <outlet property="txtFieldAddMinusValueP7" destination="ygW-de-bTT" id="dNP-Qg-seu"/>
+            </connections>
+            <point key="canvasLocation" x="263" y="90"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
